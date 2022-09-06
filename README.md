@@ -9,6 +9,7 @@ https://ramensoftware.com/winapiexec
 winapiexec is a small tool that allows to run WinAPI functions through command line parameters.
 
 Syntax
+```
 The syntax is:
 winapiexec.exe library.dll@FunctionName 123 unicode_text "a space"
 
@@ -26,6 +27,7 @@ $$:1 – a reference to another parameter, you can also use $$:0 for the program
 $a:0,1,two,3 – an array of parameters, divided by commas. You can use all the prefixes here.
 $a[1,2,$a[3,4],5] – an alternative syntax for an array of parameters. Allows to have nested arrays.
 $$:3@2 – a reference to an item in an array of parameters, can have more than one indirection.
+```
 
 While referencing another parameter, note that they are processed by the order of execution, which means there’s no point to reference a parameter at the right side relative to the referencing one.
 Also note that when a function returns, its first parameter (like library.dll@FunctionName) is replaced with the return value.
