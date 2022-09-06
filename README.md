@@ -44,7 +44,7 @@ https://github.com/m417z/winapiexec
 
 Examples
 Here are some examples of what you can do:
-
+```
 Display temp path:
 winapiexec.exe GetTempPathW 260 $b:520 , u@MessageBoxW 0 $$:3 $$:0 0x40
 
@@ -79,4 +79,5 @@ Display the Start menu:
 winapiexec.exe u@SendMessageW ( u@FindWindowW Shell_TrayWnd 0 ) 0x111 305 0
 Run task manager:
 winapiexec.exe u@SendMessageW ( u@FindWindowW Shell_TrayWnd 0 ) 0x111 420 0
+```
 More tricks like the last two can be found here.
